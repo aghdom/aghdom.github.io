@@ -1,4 +1,51 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on aghdom</title><link>https://aghdom.eu/posts/</link><description>Recent content in Posts on aghdom</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 08 Oct 2020 20:00:00 +0200</lastBuildDate><atom:link href="https://aghdom.eu/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Dealing with Burnout, or How I found motivation once again.</title><link>https://aghdom.eu/posts/dealing-with-burnout/</link><pubDate>Thu, 08 Oct 2020 20:00:00 +0200</pubDate><category>personal</category><category>motivation</category><guid>https://aghdom.eu/posts/dealing-with-burnout/</guid><description>(this turned out a bit long - TL;DR at the end.)
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on aghdom</title><link>https://aghdom.eu/posts/</link><description>Recent content in Posts on aghdom</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 26 Sep 2021 22:43:16 +0200</lastBuildDate><atom:link href="https://aghdom.eu/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Chess Engine Journey Ch. 0: Let's build a Chess AI!</title><link>https://aghdom.eu/posts/chess-engine-ch.0/</link><pubDate>Sun, 26 Sep 2021 22:43:16 +0200</pubDate><category>go</category><category>chess</category><guid>https://aghdom.eu/posts/chess-engine-ch.0/</guid><description>So at the end of last year, I started getting more interested in chess.
+I began playing online, studying puzzles, watching videos, and generally getting engaged in the chess space. Because of this, my recommendations on YouTube started to feature quite a lot of chess related content. That&amp;rsquo;s how I stumbled upon a video by Sebastian Lague, in which he tries to make a &amp;ldquo;Chess AI&amp;rdquo; to play against.
+I thought that it looked like a fun thing to try, and since I was looking for a coding side-project for a while now, I decided to give it a shot.</description><content>&lt;p>So at the end of last year, I started getting more interested in chess.&lt;/p>
+&lt;p>I began playing online, studying puzzles, watching videos,
+and generally getting engaged in the chess space. Because of this, my recommendations on YouTube started to feature quite a lot of chess related content.
+That&amp;rsquo;s how I stumbled upon &lt;a href="https://www.youtube.com/watch?v=U4ogK0MIzqk">a video&lt;/a> by &lt;em>Sebastian Lague&lt;/em>, in which he tries to make a &amp;ldquo;Chess AI&amp;rdquo; to play against.&lt;/p>
+&lt;p>I thought that it looked like a fun thing to try, and since I was looking for a coding side-project for a while now, I decided to give it a shot. And while I was at it, I also decided to document my journey!&lt;/p>
+&lt;h2 id="surveying-the-landscape">Surveying the Landscape&lt;/h2>
+&lt;p>Right, so we want to build a chess engine. But how does one actually go about doing it?&lt;/p>
+&lt;p>I began by searching for resources that already exist on the topic of chess programs. Early on, I found the &lt;a href="https://www.chessprogramming.org/Main_Page">Chess Programming Wiki&lt;/a> which proved to be
+a great source of information, as it covered all the important principal topics, a lot of the different ways of optimizing Chess algorithms, as well as
+provided a great &lt;a href="https://www.chessprogramming.org/Getting_Started">Getting Started&lt;/a> jump-off point for anyone hoping to dive into chess programming. It also has a very extensive
+&lt;a href="https://www.chessprogramming.org/Recommended_Reading">Recommended Reading&lt;/a> section, which saved me a lot of time during this phase.&lt;/p>
+&lt;h3 id="chess-program-vs-chess-engine">Chess Program vs. Chess Engine&lt;/h3>
+&lt;p>The first practical hurdle I faced was when deciding how to go about actually implementing the program itself. My first naive approach was that I had to
+obviously make the whole thing from scratch as a standalone program. I contemplated what game engine or framework would be best, but I was a bit unsatisfied
+since none of the better maintained frameworks and engines supported any of the languages close to my heart, like Go, or at least Python.&lt;/p>
+&lt;p>Wanting to develop in my preferred language of choice, I came to the idea of decoupling the graphical interface and the engine which would be calculating the
+best moves, essentially splitting the single program into frontend and backend. I would write the interface in something like Unity (I still might do that in
+the future as a separate project) and the engine in Go.&lt;/p>
+&lt;p>Luckily (and probably obviously) I wasn&amp;rsquo;t the first person to come up with this idea.&lt;/p>
+&lt;h3 id="protocols--interfaces">Protocols &amp;amp; Interfaces&lt;/h3>
+&lt;p>So turns out, people (as is more often than not the case) have already dealt with a similar issue and found a solution. There are already numerous options
+when it comes to Chess programs (or GUIs for our purposes) which support custom chess engines. (A nice &lt;a href="https://www.chessprogramming.org/GUI">list&lt;/a> can be found on the &lt;a href="https://www.chessprogramming.org/Main_Page">wiki&lt;/a>) They do
+so by utilizing a couple of standardized protocols to communicate with the engine code.&lt;/p>
+&lt;p>The two most commonly used protocols I found were &lt;em>Chess Engine Communication Protocol&lt;/em> (CECP), often simply dubbed &lt;em>xboard&lt;/em> after the program which
+introduced it, and the &lt;em>Universal Chess Interface&lt;/em> (UCI).&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>After some time pondering this topic, I finally decided to only implement a &lt;em>chess engine&lt;/em> for now, as opposed to a complete chess program (Which gives me
+the opportunity for a second project in the future maybe&amp;hellip;), as it will likely be faster and will allow me to further my coding skills with my language of
+choice, Go.&lt;/p>
+&lt;p>I also decided to go with UCI as the communication protocol for this project, as it seemed like the more straight-forward to implement (smaller number of
+individual commands, using &lt;code>stdin&lt;/code> and &lt;code>stdout&lt;/code> as its communication channels), as well as the better supported by a wider number of graphical interfaces
+(CECP slightly lacking in this regard).&lt;/p>
+&lt;h2 id="next-steps">Next Steps&lt;/h2>
+&lt;p>So, after getting all of this &amp;ldquo;boring&amp;rdquo; pre-production out of the way, I feel confident getting to work on this project. By the time I will write up another
+chapter in this series, I would like to have the following done:&lt;/p>
+&lt;ul>
+&lt;li>Think of a name for the engine&lt;/li>
+&lt;li>Setup a repository for the project&lt;/li>
+&lt;li>Prepare (at least stub) handlers for all the UCI commands&lt;/li>
+&lt;li>Implement the Board Representation part of the chess engine&lt;/li>
+&lt;/ul>
+&lt;p>Seems like I have my work cut out for me, and I can&amp;rsquo;t wait to roll up my sleeves and getting my hands dirty by actually starting to implement this project.
+Hopefully I&amp;rsquo;ll have something worth sharing again soon.&lt;/p>
+&lt;p>In the meantime, thank you for reading the first part in this series! I hope that you enjoyed it, or that it at least gave you a brief look into the problem
+space of chess programs and provided you with enough information and further reading to be able to start a similar project of your own!&lt;/p>
+&lt;p>Until the next chapter, thank you again for your time and take care!&lt;/p></content></item><item><title>Dealing with Burnout, or How I found motivation once again.</title><link>https://aghdom.eu/posts/dealing-with-burnout/</link><pubDate>Thu, 08 Oct 2020 20:00:00 +0200</pubDate><category>personal</category><category>motivation</category><guid>https://aghdom.eu/posts/dealing-with-burnout/</guid><description>(this turned out a bit long - TL;DR at the end.)
 During these last few months (Summer/Fall 2020), I found myself in an emotional, (and motivational) slump. Considering the state the world is in, it probably comes as no surprise, but combined with a few developments at work, it resulted in me having next to no drive to solve issues and feeling more and more depressed about the whole situation.</description><content>&lt;p>&lt;em>(this turned out a bit long - &lt;a href="#in-summary---tldr">TL;DR&lt;/a> at the end.)&lt;/em>&lt;/p>
 &lt;p>During these last few months (Summer/Fall 2020), I found myself in an emotional, (and motivational) slump.
 Considering the state the world is in, it probably comes as no surprise, but combined with a few developments at work,
