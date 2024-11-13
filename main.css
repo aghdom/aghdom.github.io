@@ -33,6 +33,7 @@ header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
     gap: 10px;
 }
@@ -56,11 +57,11 @@ header {
 }
 @media (max-width: 750px) {
     header {
-    flex-direction: column;
+        flex-direction: column;
     }
     .title {
-    text-align: center;
-}
+        text-align: center;
+    }
 }
 
 footer {
