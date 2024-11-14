@@ -132,6 +132,11 @@ ul li {
     font-size: 10em;
 }
 
+hr {
+    margin: 0;
+    border: var(--secondary-bg) 1px solid;
+}
+
 /* Fluid type scale */
 /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
 
