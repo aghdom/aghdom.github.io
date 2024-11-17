@@ -3,7 +3,7 @@ body {
     --primary-text: #ebebeb;
     --secondary-bg: #3d3e40;
     --secondary-text: #a4a4a4;
-    --code-bg: #323232;
+    --code-bg: #32323280;
     --code-text: #c3c3c3;
 
     --orange: #e27e31;
@@ -135,6 +135,37 @@ ul li {
 hr {
     margin: 0;
     border: var(--secondary-bg) 1px solid;
+}
+
+blockquote {
+  color: #8eb66d;
+  background-color: #2d2e3042;
+  margin: 0px;
+  padding-left: 1.25em;
+  border-left: 2px #8eb66d solid;
+}
+
+pre {
+    padding: 1em;
+    border-radius: 10px;
+    box-sizing: border-box;
+    max-height: 42ch;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary-bg) var(--code-bg);
+}
+
+pre code {
+    word-break: initial;
+}
+
+/* Style for non-highlighted code blocks */
+li code, p code {
+    font-style: monospace;
+    padding: 2px 5px;
+    border-radius: 6px;
+    background-color: var(--code-bg);
+    color: var(--code-text);
 }
 
 /* Fluid type scale */
