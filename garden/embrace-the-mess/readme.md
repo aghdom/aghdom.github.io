@@ -46,10 +46,10 @@ So have no standards! Let things dangle, leave stuff broken. Keep it messy!
 
 ## Improve the worst parts
 
-Okay, you can fix *some* things. But be mindful about it! Fight the urge to fix things immediatelly as you notice them. Let them sit broken for a while.
+Okay, you can fix *some* things. But be mindful about it! Fight the urge to fix things immediately as you notice them. Let them sit broken for a while.
 On your third, fourth time that you feel the urge, ask yourself this:
 
-> 1. Will fixing this make it *significantly* esier for me to add more stuff?
+> 1. Will fixing this make it *significantly* easier for me to add more stuff?
 > 2. Will it *meaningfully* improve usability?
 > 3. Can I implement the fix in one afternoon?
 
