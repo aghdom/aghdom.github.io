@@ -8,7 +8,7 @@ The gist of it is this:
 >
 > EMBRACE THE MESS!
 
-Whenever working on things, especially personal projects of any kind, learn to embrace the "good enough" state, the first draft that doesn't get refined, but serves the purpose. 
+When working on things, learn to embrace the "good enough" state. The first draft that doesn't get refined, but serves the purpose. This is especially true for personal projects.
 
 ## Personal context
 
@@ -25,12 +25,12 @@ This [whole site](/garden/this-website) is my attempt to fight this urge, to get
 
 ## Get it out there
 
-If it works and does *something*, it's probably good enough! Just put it out there, get it in front of folks! Or just keep it to yourself and use it.
+If it works and does *something*, it's probably good enough! Put it out there, get it in front of folks! Or keep it to yourself and use it.
 
 Don't let it sit in your drawer & collect dust. Or worse, let it stay an idea in your head. Make the thing! Show it around, use it!
 
 It's not a beauty contest, or homework. Nobody's going to grade you on it. You *definitely* shouldn't grade yourself on it.
-It's your silly little thing! If it's fun for you to work on, it's doing it's job!   
+It's your silly little thing! If it's fun for you to work on, it's doing its job!
 
 *[NORMALIZE SHARING SCRAPPY FIDDLES!](https://youtu.be/cF2OF75ivZM)*
 
@@ -51,7 +51,7 @@ On your third, fourth time that you feel the urge, ask yourself this:
 
 > 1. Will fixing this make it *significantly* easier for me to add more stuff?
 > 2. Will it *meaningfully* improve usability?
-> 3. Can I implement the fix in one afternoon?
+> 3. Can I fix it in one afternoon?
 
 If the answer to any of those is "No", then don't fix it just yet. Leave it for now and next time you encounter this issue, allow yourself one more "No". 
 <small class="subtle">(This isn't a strict method, just a good rule of thumb that works for me. Use your brain. Figure out what works for you.)</small>
