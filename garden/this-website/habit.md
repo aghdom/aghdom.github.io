@@ -1,6 +1,6 @@
 # Make it a habit
 
-Just open the folder, make a file and write something.
+Open the folder, make a file, and write something.
 
 It doesn't have to be a long complex thing.
 
