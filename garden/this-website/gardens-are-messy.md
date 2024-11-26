@@ -10,7 +10,7 @@ This can lead to you not tending to the garden as frequently as you'd like, or e
 
 So [embrace the mess](/garden/embrace-the-mess/)! Write down loose thoughts as they come to you. Work on them over time.
 
-[Make it a habit](/garden/this-website/habit.md). Never stop tending the garden.
+[Make it a habit](/garden/this-website/habit). Never stop tending the garden.
 
 ---
 
