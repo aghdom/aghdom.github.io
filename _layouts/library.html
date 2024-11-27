@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aghdom.eu/library">
   <meta property="og:image" content="/og.png">
-  <meta name=twitter:card content="summary">
+  <meta name=twitter:card content="summary_large_image">
   <meta name=twitter:title content="📗library">
   <meta name=twitter:description content="The books I've read and my thoughts on them">
   <meta name=twitter:image content="/og.png">
@@ -28,7 +28,7 @@
       {% assign year_books = site.books | where: "date", year %}
       <h2 id="{{ year }}" style="border: 0;">{{ year }} <span class="green" style="font-size: var(--step-1);">{{ year_books.size }}</span></h2>
       
-      {% for book in year_books %}
+      {% for book in year_books reversed %}
         <div class="book">
           <div class="book-info">
             {% if book.content.size > 1 %}
