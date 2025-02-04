@@ -23,7 +23,7 @@
     </div>
   <section>
 
-    {% assign years = "2024,2023,2022,2021,2020,2019" | split: "," %}
+    {% assign years = "2025,2024,2023,2022,2021,2020,2019" | split: "," %}
     {% for year in years %}    
       {% assign year_books = site.books | where: "date", year %}
       <h2 id="{{ year }}" style="border: 0;">{{ year }} <span class="green" style="font-size: var(--step-1);">{{ year_books.size }}</span></h2>
