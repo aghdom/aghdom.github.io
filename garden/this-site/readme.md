@@ -1,3 +1,6 @@
+---
+permalink: this-site
+---
 # Why did I remake this website?
 
 I've been thinking about properly starting to write on here for a long time now, but I always started from the wrong end.
@@ -12,7 +15,7 @@ Usually because I didn't actually invest any time into actually writing the cont
 ## Gardening
 Later, motivated by [Maggie Appleton](https://maggieappleton.com)'s writing and gorgeous site, I decided to actually start collecting my thoughts in a personal local digital garden. 
 This lives inside of a personal [Obsidian](https://obsidian.md) vault that I've been tending on & off for some time now. 
-As part of this process I've also decided to [embrace the mess](/garden/embrace-the-mess) and let things evolve over time instead of seeking *"perfection"*.
+As part of this process I've also decided to [embrace the mess](/embrace-the-mess) and let things evolve over time instead of seeking *"perfection"*.
 
 This led to me actually getting some writing done and organizing my thoughts better!
 

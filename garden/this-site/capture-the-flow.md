@@ -1,3 +1,6 @@
+---
+permalink: capture-the-flow
+---
 # Capture the flow of thought
 
 I recently had a thought in the shower. 

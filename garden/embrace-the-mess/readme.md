@@ -1,3 +1,6 @@
+---
+permalink: embrace-the-mess
+---
 # Embrace the mess
 
 The gist of it is this:
