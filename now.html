@@ -5,111 +5,55 @@
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/main.css" />
   <title>aghdom | now</title>
-  <meta property="og:title" content="🔥aghdom | now">
+  <meta property="og:title" content="aghdom | now">
   <meta property="og:description" content="What I'm up to now">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aghdom.eu/">
   <meta property="og:image" content="/og.png">
   <meta name=twitter:card content="summary_large_image">
-  <meta name=twitter:title content="🔥aghdom | now">
+  <meta name=twitter:title content="aghdom | now">
   <meta name=twitter:description content="What I'm up to now">
   <meta name="twitter:image" content="/og.png">
   <meta name="fediverse:creator" content="@aghdom@mas.to">
 </head>
 <body>
-    <h1 class="orange title">Now</h1>
-    <h3 class="title subtitle">A sporadicaly updated log of what I'm working on, reading, thinking about and generally, where I am in life.</h3>
-    <p>Whenever you're done, just pop back to the <a class="orange" href="/" accesskey="h">landing page</a>!</p>
-    <section>
-        <h2 class="blue title">November 2024</h2>
-        <p>
-            Working for a company in the marketing space before the "peak period" (the time before Christmas when Black Friday, Cyber Monday and such occur) can definitely be stressful. 
-            Even without any incidents there is an increased level of tention and more focus on ensuring that everything runs smoothly.
-            So I took the last possible opportunity to take a week off, and decided to spend that time re-igniting my passion for this little corner of the internet of mine.
-        </p>
-        <p>
-            While doing so, and retracing my steps through the <i>better computing</i> reading that I've been doing, I stumbled upon the <a class="blue" href="http://tadiweb.com">tadi web</a> and got inspired to re-make this whole place.
-            Riding this wave, I'm hoping to finally give more time to actually writing down the things I'm looking into and thinking about, so they don't get lost in the ether of my mind and can instead be lost in the ether of the internet.
-            The whole area of <i>better computing</i> that has been slowly building over the years strongly resonates with me and I definitely plan to explore and engage in it further.
-        </p>
-        <p>
-            On the hobby side of things, I've been spending a lot of my time on <abbr>TTRPG</abbr>s (tabletop role-playing games). I'm currently running 2 long-term games, play in one, and every other week I run one-shots at a local event.
-            And I'm also attempting to kickstart a small local Discord server dedicated to the topic, with some success.
-            I think that in terms of time spent, <abbr title="tabletop role-playing games">TTRPGs</abbr> are definitely competing for the number one spot among my hobbies. 
-            I've been participating in this hobby for quite some time, but in the last year or two it has grown significantly and is now taking up a sizeable chunk of my free time. Sometimes I worry that maybe a bit too much, and that I might have to cut back
-            somewhat to make it more sustainable, but I'm managing for now.
-        </p>
-    </section>
+    <header style="float: left;">
+        <a href="/"><img src="/media/icons/bolt.svg" width="60"/></a>
+    </header>
+    <nav>
+        <ul style="display: inline-block;">
+        <li><a href="/garden">garden</a></li>
+        <li><a href="https://current.aghdom.eu">current</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/now">now</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="title">Now</h1>
+        <h3 class="title subtitle">A sporadicaly updated log of what I'm working on, reading, thinking about and generally, where I am in life.</h3>
+        <p>Whenever you're done, just pop back to the <a href="/" accesskey="h">landing page</a>!</p>
+        <section>
+            <h2 class="title">November 2024</h2>
+            <p>
+                Working for a company in the marketing space before the "peak period" (the time before Christmas when Black Friday, Cyber Monday and such occur) can definitely be stressful. 
+                Even without any incidents there is an increased level of tention and more focus on ensuring that everything runs smoothly.
+                So I took the last possible opportunity to take a week off, and decided to spend that time re-igniting my passion for this little corner of the internet of mine.
+            </p>
+            <p>
+                While doing so, and retracing my steps through the <i>better computing</i> reading that I've been doing, I stumbled upon the <a href="http://tadiweb.com">tadi web</a> and got inspired to re-make this whole place.
+                Riding this wave, I'm hoping to finally give more time to actually writing down the things I'm looking into and thinking about, so they don't get lost in the ether of my mind and can instead be lost in the ether of the internet.
+                The whole area of <i>better computing</i> that has been slowly building over the years strongly resonates with me and I definitely plan to explore and engage in it further.
+            </p>
+            <p>
+                On the hobby side of things, I've been spending a lot of my time on <abbr>TTRPG</abbr>s (tabletop role-playing games). I'm currently running 2 long-term games, play in one, and every other week I run one-shots at a local event.
+                And I'm also attempting to kickstart a small local Discord server dedicated to the topic, with some success.
+                I think that in terms of time spent, <abbr title="tabletop role-playing games">TTRPGs</abbr> are definitely competing for the number one spot among my hobbies. 
+                I've been participating in this hobby for quite some time, but in the last year or two it has grown significantly and is now taking up a sizeable chunk of my free time. Sometimes I worry that maybe a bit too much, and that I might have to cut back
+                somewhat to make it more sustainable, but I'm managing for now.
+            </p>
+        </section>
+    </main>
     <footer class="subtle">
         This website was made by <a href="/">me</a>. It might change drastically.
     </footer>
 </body>
-<style>
-  canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-  }
-</style>
-<canvas></canvas>
-<script>
-// Bubbles stolen from https://todepond.com
-const canvas = document.querySelector("canvas");
-const context = canvas.getContext("2d");
-
-document.body.onresize = () => {
-  canvas.width = window.innerWidth * devicePixelRatio;
-  canvas.height = window.innerHeight * devicePixelRatio;
-};
-
-document.body.onresize();
-
-const bubbles = [];
-
-const draw = () => {
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.strokeStyle = "#3d3e40";
-  context.lineWidth = 2;
-  for (const raindrop of bubbles) {
-  context.beginPath();
-  context.arc(raindrop.x, raindrop.y, raindrop.size, 0, Math.PI * 2, false);
-  context.stroke();
-  }
-};
-
-const update = (delta) => {
-  if (Math.random() < delta * 0.5) {
-  const size = 25 + Math.random() * 50;
-  bubbles.push({
-      x: Math.random() * canvas.width,
-      y: canvas.height + size,
-      size,
-      speed: 50 + Math.random() * 50,
-  });
-  }
-
-  for (let i = 0; i < bubbles.length; i++) {
-  const bubble = bubbles[i];
-  bubble.y -= bubble.speed * delta;
-  if (bubble.y < -bubble.size) {
-      bubbles.splice(i, 1);
-      i--;
-  }
-  }
-};
-
-let lastTime = 0;
-const loop = (time) => {
-  const delta = (time - lastTime) / 1000;
-  lastTime = time;
-  update(delta);
-  draw();
-  requestAnimationFrame(loop);
-};
-
-loop();
-</script>

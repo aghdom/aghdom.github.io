@@ -16,6 +16,16 @@ h2 {
     display: inline;
 }
 
+.header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-icon {
+    padding-right: 0.2em;
+}
+
 
 @media (min-width: 620px) {
     .desktop {
@@ -29,7 +39,7 @@ h2 {
     }
 }
 
-header {
+.info {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -40,7 +50,7 @@ header {
 
 .headshot {
     padding: 0.25em;
-    border: var(--orange) 0.25em dotted;
+    border: 0.25em dotted;
     border-radius: 50%;
 }
 
@@ -76,6 +86,10 @@ header {
     width: 4.2em;
 }
 
+.review .title {
+    margin-bottom: 1em;
+}
+
 @media (min-width: 750px) {
     .headshot {
         width: 200px;
@@ -83,11 +97,14 @@ header {
     }
 }
 @media (max-width: 750px) {
-    header {
+    .info {
         flex-direction: column;
     }
     .title {
         text-align: center;
+    }
+    .header {
+        justify-content: center;
     }
     .book {
         flex-direction: column;
@@ -107,12 +124,4 @@ footer {
 
 li {
     line-height: 1.2;
-}
-
-#br {
-    color: var(--br-yellow);
-}
-a#br:hover {
-    background-color: var(--br-yellow);
-    color: var(--primary-bg);
 }

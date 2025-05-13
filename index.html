@@ -5,122 +5,65 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="main.css" />
   <title>aghdom</title>
-  <meta property="og:title" content="🔥aghdom">
-  <meta property="og:description" content="Hey, I'm Dom!👋 I write code, read books, play games and think about stuff.">
+  <meta property="og:title" content="aghdom">
+  <meta property="og:description" content="Hey, I'm Dom! I write code, read books, play games and think about stuff.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aghdom.eu/">
   <meta property="og:image" content="/og.png">
   <meta name=twitter:card content="summary_large_image">
-  <meta name=twitter:title content="🔥aghdom">
-  <meta name=twitter:description content="Hey, I'm Dom!👋 I write code, read books, play games and think about stuff.">
+  <meta name=twitter:title content="aghdom">
+  <meta name=twitter:description content="Hey, I'm Dom! I write code, read books, play games and think about stuff.">
   <meta name=twitter:image content="/og.png">
   <meta name="fediverse:creator" content="@aghdom@mas.to">
 </head>
 <body>
-  <h1 class="title orange"><div class="desktop">🔥</div>aghdom</h1>
-  <header>
-      <img class="headshot" src="https://avatars0.githubusercontent.com/u/22467179?s=460&amp;u=9ab7a3b20aa6e5bcb22d90cecc079f88a0c72b30&amp;v=4" alt="Dominik Ágh" height="150" width="150"/>
-      <section class="heading">
-          <p>
-              Hey, I'm Dom!👋 I write code, <a href="/library">read books</a>, play games and think about stuff.
-          </p>
-          <ul>
-              <li>coding at <a id="br" href="https://bloomreach.com">bloomreach</a></li>
-              <li>posting to my <a class="blue" href="https://current.aghdom.eu" accesskey="c">current</a></li>
-              <li>planting in my <a class="green" href="/garden" accesskey="g">garden</a></li>
-          </ul>
-          <ul>
-            <li>learn more <a class="orange" href="/about" accesskey="a">about me</a></li>
-            <li>what I'm up to <a class="blue" href="/now" accesskey="n">now</a></li>
-          </ul>
-      </section>
-      
+  <header style="float: left;">
+    <a href="/"><img src="media/icons/bolt.svg" width="60"/></a>
   </header>
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a class="green" href="/garden">garden</a> - wiki/blog/thing (constantly tending)</li>
-      <li><a class="blue" href="https://current.aghdom.eu">current</a> - personal micro-blog built in Go</li>
+  <nav>
+    <ul style="display: inline-block;">
+      <li><a href="/garden">garden</a></li>
+      <li><a href="https://current.aghdom.eu">current</a></li>
+      <li><a href="/about">about</a></li>
+      <li><a href="/now">now</a></li>
     </ul>
-  </section>
-  <section id="contact">
-      <h2>Reach out</h2>
+  </nav>
+  <main>
+    <h1 class="title header"><div class="desktop"><img class="header-icon" src="media/icons/bonfire.svg" width="64"/></div>aghdom</h1>
+    <section class="info">
+        <img class="headshot" src="https://avatars0.githubusercontent.com/u/22467179?s=460&amp;u=9ab7a3b20aa6e5bcb22d90cecc079f88a0c72b30&amp;v=4" alt="Dominik Ágh" height="150" width="150"/>
+        <section class="heading">
+            <p>
+                Hey, I'm Dom! I write code, <a href="/library">read books</a>, play games and think about stuff.
+            </p>
+            <ul>
+                <li>coding, writing, playing, <em>crafting</em></li>
+                <li>posting to my <a href="https://current.aghdom.eu" accesskey="c">current</a></li>
+                <li>planting in my <a href="/garden" accesskey="g">garden</a></li>
+            </ul>
+            <ul>
+              <li>learn more <a href="/about" accesskey="a">about me</a></li>
+              <li>what I'm up to <a href="/now" accesskey="n">now</a></li>
+            </ul>
+        </section>
+      </section>
+    <section id="projects">
+      <h2>Projects</h2>
       <ul>
-          <li><a class="orange" href="mailto:agh.dominik@gmail.com">email</a></li>
-          <li><a class="purple" rel="me" href="https://mas.to/@aghdom">mastodon</a></li>
-          <li><a class="blue" href="https://bsky.app/profile/aghdom.eu">bluesky</a></li>
+        <li><a href="/garden">garden</a> - wiki/blog/thing (constantly tending)</li>
+        <li><a href="https://current.aghdom.eu">current</a> - personal micro-blog built in Go</li>
       </ul>
-  </section>
+    </section>
+    <section id="contact">
+        <h2>Reach out</h2>
+        <ul>
+            <li><a href="mailto:agh.dominik@gmail.com">email</a></li>
+            <li><a rel="me" href="https://mas.to/@aghdom">mastodon</a></li>
+            <li><a href="https://bsky.app/profile/aghdom.eu">bluesky</a></li>
+        </ul>
+    </section>
+  </main>
   <footer class="subtle">
     This website was made by <a href="/">me</a>. It might change drastically.
   </footer>
 </body>
-<style>
-  canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-  }
-</style>
-<canvas></canvas>
-<script>
-// Bubbles stolen from https://todepond.com
-const canvas = document.querySelector("canvas");
-const context = canvas.getContext("2d");
-
-document.body.onresize = () => {
-  canvas.width = window.innerWidth * devicePixelRatio;
-  canvas.height = window.innerHeight * devicePixelRatio;
-};
-
-document.body.onresize();
-
-const bubbles = [];
-
-const draw = () => {
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.strokeStyle = "#3d3e40";
-  context.lineWidth = 2;
-  for (const raindrop of bubbles) {
-  context.beginPath();
-  context.arc(raindrop.x, raindrop.y, raindrop.size, 0, Math.PI * 2, false);
-  context.stroke();
-  }
-};
-
-const update = (delta) => {
-  if (Math.random() < delta * 0.5) {
-  const size = 25 + Math.random() * 50;
-  bubbles.push({
-      x: Math.random() * canvas.width,
-      y: canvas.height + size,
-      size,
-      speed: 50 + Math.random() * 50,
-  });
-  }
-
-  for (let i = 0; i < bubbles.length; i++) {
-  const bubble = bubbles[i];
-  bubble.y -= bubble.speed * delta;
-  if (bubble.y < -bubble.size) {
-      bubbles.splice(i, 1);
-      i--;
-  }
-  }
-};
-
-let lastTime = 0;
-const loop = (time) => {
-  const delta = (time - lastTime) / 1000;
-  lastTime = time;
-  update(delta);
-  draw();
-  requestAnimationFrame(loop);
-};
-
-loop();
-</script>

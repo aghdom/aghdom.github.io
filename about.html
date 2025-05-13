@@ -5,127 +5,70 @@
   <link rel="stylesheet" href="/style.css" />
   <link rel="stylesheet" href="/main.css" />
   <title>aghdom | about</title>
-  <meta property="og:title" content="🔥aghdom | about">
+  <meta property="og:title" content="aghdom | about">
   <meta property="og:description" content="A bit about me.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://aghdom.eu/">
   <meta property="og:image" content="/og.png">
   <meta name=twitter:card content="summary_large_image">
-  <meta name=twitter:title content="🔥aghdom | about">
+  <meta name=twitter:title content="aghdom | about">
   <meta name=twitter:description content="A bit about me.">
   <meta name=twitter:image content="/og.png">
   <meta name="fediverse:creator" content="@aghdom@mas.to">
 </head>
 <body>
-    <header>
-        <img class="headshot" src="https://avatars0.githubusercontent.com/u/22467179?s=460&amp;u=9ab7a3b20aa6e5bcb22d90cecc079f88a0c72b30&amp;v=4" alt="Dominik Ágh" height="150" width="150"/>
-        <div>
-            <div class="title">
-                <h1 class="orange" id="name">Dominik Ágh <div class="desktop">⚡</div></h1>
-                <div class="subtle" style="margin-top: -1.75em;" id="pronouns">he/him</div>
-                <h3 class="grey">coder︱maker︱enthusiast</h3>
-            </div>
-        </div>
+    <header style="float: left;">
+        <a href="/"><img src="/media/icons/bolt.svg" width="60"/></a>
     </header>
-    <section id="about-me">
-        <h2>About me</h2>
-        <p>
-            By day, I'm primarily a backend developer and tech lead at <a id="br" href="https://bloomreach.com">Bloomreach</a>. 
-            There I'm responsible for the data pipeline, making sure that all of the data that is sent to us gets where it needs to go (which sometimes might be the bin).
-            I work mainly in <b>Go</b> and <b>Python</b>, but I dabble in all sorts of languages and technologies.
-        </p>
-        <p>
-            By night, I mess around with a few passion projects, including this site, I'm very into video games, board games & tabletop roleplaying games, enjoy good tea and reading a wide variety of books!
-            Sometimes I draw stuff! I also keep a bullet journal and tend a <a class="green" href="/garden">digital garden</a>/wiki/blog/thing.
-        </p>
-        <p>
-            If you want learn more, see what I'm up to <a class="orange" href="/now">now</a>...
-        </p>
-    </section>
-    <section id="about-site">
-        <h2>About this site</h2>
-        <p>
-            This site was made with the intention to be as simple as possible, so it's built with pure HTML+CSS with a sprinkle of JavaScript for effect. 
-            You can find the full source code on <a class="blue" href="https://github.com/aghdom/aghdom.github.io">GitHub</a>. Feel free to browse, as well as, submit PRs for changes.
-        </p>
-        <p>
-            The goal is for it to be as easy as possible to simply add new stuff and not get bogged down in trying to create a site-generation pipeline instead of actually writing stuff and making things!
-        </p> 
-    </section>
-    <br/>
-    <div>
-        That's it! Go back to the <a class="orange" href="/" accesskey="h">landing page</a>...
-    </div>
-  <footer class="subtle">
-    This website was made by <a href="/">me</a>. It might change drastically.
-  </footer>
+    <nav>
+        <ul style="display: inline-block;">
+        <li><a href="/garden">garden</a></li>
+        <li><a href="https://current.aghdom.eu">current</a></li>
+        <li><a href="/about">about</a></li>
+        <li><a href="/now">now</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="info">
+            <img class="headshot" src="https://avatars0.githubusercontent.com/u/22467179?s=460&amp;u=9ab7a3b20aa6e5bcb22d90cecc079f88a0c72b30&amp;v=4" alt="Dominik Ágh" height="150" width="150"/>
+            <div>
+                <div class="title">
+                    <h1 class="header" id="name">Dominik Ágh <div class="desktop"><img class="header-icon" src="media/icons/bolt.svg" width="80"></div></h1>
+                    <div class="subtle" style="margin-top: -1.75em;" id="pronouns">he/him</div>
+                    <h3 class="grey">coder︱maker︱enthusiast</h3>
+                </div>
+            </div>
+        </section>
+        <section id="about-me">
+            <h2>About me</h2>
+            <p>
+                By day, I'm primarily a backend developer and tech lead responsible for the data ingestion into our systems, making sure that all of the data that is sent to us gets where it needs to go (which sometimes might be the bin).
+                I work mainly in <b>Go</b> and <b>Python</b>, but I dabble in all sorts of languages and technologies.
+            </p>
+            <p>
+                By night, I mess around with a few passion projects, including this site, I'm very into video games, board games & tabletop roleplaying games, enjoy good tea and reading a wide variety of books!
+                Sometimes I draw stuff! I also keep a bullet journal and tend a <a href="/garden">digital garden</a>/wiki/blog/thing.
+            </p>
+            <p>
+                If you want learn more, see what I'm up to <a href="/now">now</a>...
+            </p>
+        </section>
+        <section id="about-site">
+            <h2>About this site</h2>
+            <p>
+                This site was made with the intention to be as simple as possible, so it's built with pure HTML+CSS with a sprinkle of JavaScript for effect. 
+                You can find the full source code on <a href="https://github.com/aghdom/aghdom.github.io">GitHub</a>. Feel free to browse, as well as, submit PRs for changes.
+            </p>
+            <p>
+                The goal is for it to be as easy as possible to simply add new stuff and not get bogged down in trying to create a site-generation pipeline instead of actually writing stuff and making things!
+            </p> 
+        </section>
+        <br/>
+        <div>
+            That's it! Go back to the <a href="/" accesskey="h">landing page</a>...
+        </div>
+    </main>
+    <footer class="subtle">
+        This website was made by <a href="/">me</a>. It might change drastically.
+    </footer>
 </body>
-<style>
-  canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-  }
-</style>
-<canvas></canvas>
-<script>
-// Bubbles stolen from https://todepond.com
-const canvas = document.querySelector("canvas");
-const context = canvas.getContext("2d");
-
-document.body.onresize = () => {
-  canvas.width = window.innerWidth * devicePixelRatio;
-  canvas.height = window.innerHeight * devicePixelRatio;
-};
-
-document.body.onresize();
-
-const bubbles = [];
-
-const draw = () => {
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.strokeStyle = "#3d3e40";
-  context.lineWidth = 2;
-  for (const raindrop of bubbles) {
-  context.beginPath();
-  context.arc(raindrop.x, raindrop.y, raindrop.size, 0, Math.PI * 2, false);
-  context.stroke();
-  }
-};
-
-const update = (delta) => {
-  if (Math.random() < delta * 0.5) {
-  const size = 25 + Math.random() * 50;
-  bubbles.push({
-      x: Math.random() * canvas.width,
-      y: canvas.height + size,
-      size,
-      speed: 50 + Math.random() * 50,
-  });
-  }
-
-  for (let i = 0; i < bubbles.length; i++) {
-  const bubble = bubbles[i];
-  bubble.y -= bubble.speed * delta;
-  if (bubble.y < -bubble.size) {
-      bubbles.splice(i, 1);
-      i--;
-  }
-  }
-};
-
-let lastTime = 0;
-const loop = (time) => {
-  const delta = (time - lastTime) / 1000;
-  lastTime = time;
-  update(delta);
-  draw();
-  requestAnimationFrame(loop);
-};
-
-loop();
-</script>
