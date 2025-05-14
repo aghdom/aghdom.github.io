@@ -101,6 +101,11 @@ main ul li {
     margin: 0.2em 0;
 }
 
+main ul ul, main ol ol {
+    margin: 0;
+}
+
+
 main ol li {
     margin: 0.2em;
 }
